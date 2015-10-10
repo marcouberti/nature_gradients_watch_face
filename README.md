@@ -1,7 +1,7 @@
 # Nature Gradients Watch Face
 
 ----------
-Interactive and animated Android Wear watch face with stunning sunlight effects.
+Interactive Android Wear watch face.
 - Ambient mode
 - Touch to change date format infos
 - Configure from watch and from smartphone
