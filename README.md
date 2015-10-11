@@ -1,6 +1,5 @@
 # Nature Gradients Watch Face
 
-----------
 Interactive Android Wear watch face.
 - Ambient mode
 - Touch to change date format infos
