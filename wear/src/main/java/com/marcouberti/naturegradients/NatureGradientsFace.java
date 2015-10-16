@@ -34,6 +34,7 @@ import com.google.android.gms.wearable.DataItem;
 import com.google.android.gms.wearable.DataMap;
 import com.google.android.gms.wearable.DataMapItem;
 import com.google.android.gms.wearable.Wearable;
+import com.marcouberti.naturegradients.utils.ScreenUtils;
 
 import java.lang.ref.WeakReference;
 import java.text.DateFormat;
@@ -244,7 +245,7 @@ public class NatureGradientsFace extends CanvasWatchFaceService {
                 canvas.drawRect(0, 0, canvas.getWidth(), canvas.getHeight(), mBackgroundPaint);
                 canvas.save();
                 canvas.rotate((float) (Math.toDegrees(secRot)), width / 2, width / 2);
-                canvas.drawCircle(width / 2, 20, 6, mSecondsCirclePaint);
+                canvas.drawCircle(width / 2, ScreenUtils.convertDpToPixels(getApplicationContext(),15), ScreenUtils.convertDpToPixels(getApplicationContext(),4), mSecondsCirclePaint);
                 canvas.restore();
             }else {
                 //BLACK BG TO SAVE ENERGY
