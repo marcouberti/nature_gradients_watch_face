@@ -245,7 +245,7 @@ public class NatureGradientsFace extends CanvasWatchFaceService {
                 canvas.drawRect(0, 0, canvas.getWidth(), canvas.getHeight(), mBackgroundPaint);
                 canvas.save();
                 canvas.rotate((float) (Math.toDegrees(secRot)), width / 2, width / 2);
-                canvas.drawCircle(width / 2, ScreenUtils.convertDpToPixels(getApplicationContext(),15), ScreenUtils.convertDpToPixels(getApplicationContext(),4), mSecondsCirclePaint);
+                canvas.drawCircle(width / 2, ScreenUtils.convertDpToPixels(getApplicationContext(),15), ScreenUtils.convertDpToPixels(getApplicationContext(),5), mSecondsCirclePaint);
                 canvas.restore();
             }else {
                 //BLACK BG TO SAVE ENERGY

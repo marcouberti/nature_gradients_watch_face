@@ -29,6 +29,7 @@
     <string name="green_lawn">Green lawn</string>
     <string name="grass">Grass</string>
     <string name="flower">Flower</string>
+    <string name="north_pole">North pole sky</string>
 
     <string-array name="gradients_face_array">
         <item>@string/aurora_name</item>
@@ -57,5 +58,6 @@
         <item>@string/green_lawn</item>
         <item>@string/grass</item>
         <item>@string/flower</item>
+        <item>@string/north_pole</item>
     </string-array>
 </resources>
