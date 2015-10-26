@@ -40,7 +40,7 @@ public final class NatureGradientsWatchFaceUtil {
 
     public static final String KEY_SECONDS_COLOR = "SECONDS_COLOR";
 
-    public static final String PATH_WITH_FEATURE = "/watch_face_config/Digital";
+    public static final String PATH_WITH_FEATURE = "/watch_face_config/NGradients";
 
     /**
      * Name of the default interactive mode background color and the ambient mode background color.

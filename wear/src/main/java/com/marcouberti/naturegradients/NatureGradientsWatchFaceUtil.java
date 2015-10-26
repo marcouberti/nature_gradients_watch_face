@@ -59,7 +59,7 @@ public final class NatureGradientsWatchFaceUtil {
     /**
      * The path for the {@link DataItem} containing {@link NatureGradientsFace} configuration.
      */
-    public static final String PATH_WITH_FEATURE = "/watch_face_config/Digital";
+    public static final String PATH_WITH_FEATURE = "/watch_face_config/NGradients";
 
     /**
      * Name of the default interactive mode background color and the ambient mode background color.
