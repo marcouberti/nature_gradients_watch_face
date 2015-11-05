@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ComponentName;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -94,7 +95,7 @@ public class NatureGradientsWatchFaceCompanionConfigActivity extends Activity
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
-        RecyclerView.ItemAnimator animator = new DefaultItemAnimator();
+        DefaultItemAnimator animator = new DefaultItemAnimator();
         animator.setSupportsChangeAnimations(false);//no animation for changes
         recyclerView.setItemAnimator(animator);
         robotLayoutManager = new LinearLayoutManager(this);
@@ -102,6 +103,19 @@ public class NatureGradientsWatchFaceCompanionConfigActivity extends Activity
         recyclerView.setLayoutManager(robotLayoutManager);
         adapter = new GradientAdapter();
         recyclerView.setAdapter(adapter);
+    }
+
+
+    public void rateThisAppClick(View view) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("market://details?id=com.marcouberti.naturegradients"));
+        startActivity(intent);
+    }
+
+    public void seeOtherAppsClick(View view) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("market://search?q=pub:Marco Uberti"));
+        startActivity(intent);
     }
 
     @Override
@@ -289,6 +303,7 @@ public class NatureGradientsWatchFaceCompanionConfigActivity extends Activity
         }
         return true;
     }
+
 
     public class GradientAdapter extends RecyclerView.Adapter<GradientAdapter.ViewHolder> {
 

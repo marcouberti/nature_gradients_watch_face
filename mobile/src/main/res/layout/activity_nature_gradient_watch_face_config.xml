@@ -39,11 +39,53 @@
             android:layout_centerInParent="true"
             android:src="@drawable/blank_watch"/>
     </RelativeLayout>
-    <android.support.v7.widget.RecyclerView
-        android:background="@color/config_activity_background"
-        android:id="@+id/recycler_view"
-        android:scrollbars="none"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clipToPadding="false"/>
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:layout_above="@+id/bottomContainer"
+            android:background="@color/config_activity_background"
+            android:id="@+id/recycler_view"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"/>
+        <LinearLayout
+            android:id="@+id/bottomContainer"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/seeOtherApps"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/button_bg"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:text="@string/see_other_apps"
+                android:onClick="seeOtherAppsClick"/>
+            <Button
+                android:id="@+id/rateButton"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/button_bg_accent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:text="@string/rate_this_app"
+                android:onClick="rateThisAppClick"/>
+        </LinearLayout>
+    </RelativeLayout>
+
 </LinearLayout>
